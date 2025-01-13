@@ -7,51 +7,46 @@ TODO:
 */
 
 //* My solution
-void main() {
+// void main() {
 
-  List<int> GivenList = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
-  List<int> EvenElements = [];
+//   List<int> GivenList = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+//   List<int> EvenElements = [];
 
-  EvenElements = EvenElementsExtract(GivenList);
-  print("Even Elements $EvenElements");
-}
+//   EvenElements = EvenElementsExtract(GivenList);
+//   print("Even Elements $EvenElements");
+// }
 
-List<int> EvenElementsExtract(List<int> Elements){
+// List<int> EvenElementsExtract(List<int> Elements){
   
-  List<int> EvenElementsFun = [];
+//   List<int> EvenElementsFun = [];
 
-  for (int element in Elements) {
-    if (element.isEven) {
-      EvenElementsFun.add(element);
-      //ev_el[e] = a[i]; this way is an error
-    }
-  }
+//   for (int element in Elements) {
+//     if (element.isEven) {
+//       EvenElementsFun.add(element);
+//       //! ev_el[e] = a[i]; this way is an error
+//     }
+//   }
 
-  
-  // EvenElementsFun = Elements.where((value) => value.isEven).toList();
-  // EvenElementsFun = Elements.takeWhile((value) => value.isEven).toList();
-  return EvenElementsFun;
-}
+//   //* Other Methods
+//   //* EvenElementsFun = Elements.where((value) => value.isEven).toList();
+//   //* EvenElementsFun = Elements.takeWhile((value) => value.isEven).toList();
+//   return EvenElementsFun;
+// }
+
 // the suggested sol from the author
-// its solution depending on its preknowledge
-// to the positions of the even elements
-/*
+// /*
 void main() {
   List<int> a = [1, 4, 9, 16, 25, 4, 36, 49, 64, 81, 100];
-
-  int i = 0;
   List<int> l = [];
 
   for (var e in a) {
-    print(i);
-    if (++i % 2 == 0) {
-      print(i);
+    if (e % 2 == 0) {
       l.add(e);
     }
   }
   print(l);
   
   // One liner
-  print([for (var e in a) if (++i % 2 == 0) e]);
+  print([for (var e in a) if (++e % 2 == 0) e]);
 }
-*/
+// */
